@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website resmi wisata budaya Candi Borobudur, Magelang, Jawa Tengah. Jelajahi sejarah, arsitektur stupa, galeri visual, dan pemesanan tiket."
+    />
+    <title>Beranda | Wisata Candi Borobudur</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-borobudur" aria-label="Navigasi utama">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <span class="brand-mark">WB</span>
+            <span class="d-flex flex-column">
+              <span class="brand-title">Wisata Borobudur</span>
+              <span class="brand-sub">Jawa Tengah</span>
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigasi"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="daya-tarik.html">Daya Tarik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeri.html">Galeri</a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <a class="btn btn-bronze btn-sm px-4 py-2" href="tiket.html">Tiket & Pesan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-home">
+        <img
+          src="img/sunrise.jpg.jpeg"
+          alt="Candi Borobudur saat matahari terbit"
+          class="hero-bg-media"
+        />
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="hero-badge mb-4 reveal">
+                <span>✦ Warisan Budaya Dunia UNESCO • Magelang</span>
+              </div>
+              <h1 class="display-3 fw-bold font-display mb-3 reveal delay-1">
+                Temukan Keagungan<br />
+                <span class="text-gold">Candi Borobudur</span>
+              </h1>
+              <p class="lead text-light opacity-75 mb-4 col-lg-10 reveal delay-2">
+                Mahakarya arsitektur Buddha abad ke-8 di jantung Pulau Jawa.
+                Saksikan harmoni batu andesit, ribuan panel relief bersejarah,
+                serta panorama fajar di kaki Pegunungan Menoreh.
+              </p>
+              <div class="d-flex flex-wrap gap-3 reveal delay-3">
+                <a href="tiket.html" class="btn btn-bronze btn-lg">
+                  Pesan Kunjungan
+                </a>
+                <a href="tentang.html" class="btn btn-glass btn-lg">
+                  Telusuri Sejarah
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#ringkasan" class="hero-scroll-cue text-decoration-none">
+          <span>Scroll untuk menjelajah</span>
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 5v14M19 12l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- STATISTIK ARSITEKTUR (ANIMATED COUNTERS) -->
+      <section id="ringkasan" class="py-5 bg-sand border-bottom">
+        <div class="container py-3">
+          <div class="row g-4 text-center">
+            <div class="col-6 col-lg-3 reveal">
+              <div class="stat-box h-100">
+                <div class="stat-number" data-count="2672" data-suffix="">0</div>
+                <div class="fw-semibold mt-1">Panel Relief</div>
+                <small class="text-muted">Kisah naratif & dekoratif</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 reveal delay-1">
+              <div class="stat-box h-100">
+                <div class="stat-number" data-count="504" data-suffix="">0</div>
+                <div class="fw-semibold mt-1">Arca Buddha</div>
+                <small class="text-muted">Tersebar di tiap tingkatan</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 reveal delay-2">
+              <div class="stat-box h-100">
+                <div class="stat-number" data-count="72" data-suffix="+1">0</div>
+                <div class="fw-semibold mt-1">Stupa Berlubang</div>
+                <small class="text-muted">Mengelilingi Stupa Induk</small>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 reveal delay-3">
+              <div class="stat-box h-100">
+                <div class="stat-number" data-count="1991" data-suffix="">0</div>
+                <div class="fw-semibold mt-1">Situs UNESCO</div>
+                <small class="text-muted">Diakui sebagai warisan dunia</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE COSMOLOGY PREVIEW -->
+      <section class="py-5 my-4">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5 reveal-left">
+              <span class="kicker-tag mb-2">FILOSOFI KOSMOLOGI</span>
+              <h2 class="display-6 font-display fw-bold mb-3">
+                Tiga Tingkatan Menuju Pencerahan
+              </h2>
+              <p class="text-muted mb-4">
+                Klik setiap tingkatan di bawah ini untuk melihat makna filosofis dan
+                struktur arsitektur yang membentuk piramida berundak Borobudur.
+              </p>
+
+              <div class="d-grid gap-3">
+                <button
+                  type="button"
+                  class="cosmology-pill active"
+                  data-cosmology="kamadhatu"
+                >
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5 font-display">1. Kamadhatu</strong>
+                    <small class="text-muted fw-semibold">Tingkat Dasar</small>
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  class="cosmology-pill"
+                  data-cosmology="rupadhatu"
+                >
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5 font-display">2. Rupadhatu</strong>
+                    <small class="text-muted fw-semibold">4 Teras Persegi</small>
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  class="cosmology-pill"
+                  data-cosmology="arupadhatu"
+                >
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong class="fs-5 font-display">3. Arupadhatu</strong>
+                    <small class="text-muted fw-semibold">3 Teras Melingkar</small>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-7 reveal-right">
+              <div class="heritage-card p-3 p-md-4">
+                <div class="card-img-wrap rounded-4 mb-4" style="height: 310px;">
+                  <img
+                    id="cosmoImg"
+                    src="img/relief.png"
+                    alt="Kamadhatu — Alam Nafsu Duniawi"
+                    class="w-100 h-100 object-fit-cover"
+                    style="transition: opacity 0.25s ease, transform 0.6s ease;"
+                  />
+                </div>
+                <span id="cosmoSubtitle" class="kicker-tag mb-2">Tingkat Dasar • Kaki Candi</span>
+                <h3 id="cosmoTitle" class="font-display fw-bold h3 mb-2">
+                  Kamadhatu — Alam Nafsu Duniawi
+                </h3>
+                <p id="cosmoDesc" class="text-muted mb-3">
+                  Melambangkan dunia yang masih terikat oleh hawa nafsu dan hukum
+                  sebab-akibat (karma). Pada bagian kaki candi tersembunyi 160 panel
+                  relief Karmawibhangga yang menggambarkan perilaku manusia serta
+                  konsekuensinya.
+                </p>
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 pt-3 border-top">
+                  <span id="cosmoStats" class="badge rounded-pill bg-sand text-bronze px-3 py-2 fw-semibold">
+                    160 Panel Relief • Pondasi Utama
+                  </span>
+                  <a href="tentang.html" class="fw-semibold text-bronze text-decoration-none">
+                    Pelajari Detail Sejarah →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHT HALAMAN -->
+      <section class="py-5 bg-sand">
+        <div class="container py-3">
+          <div class="text-center mx-auto mb-5 reveal" style="max-width: 650px;">
+            <span class="kicker-tag mb-2">EKSPLORASI DESTINASI</span>
+            <h2 class="display-6 font-display fw-bold">Jelajahi Setiap Sisi Borobudur</h2>
+            <p class="text-muted">
+              Pilih pengalaman yang ingin Anda telusuri lebih jauh melalui halaman
+              khusus yang telah kami siapkan.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4 reveal">
+              <article class="heritage-card h-100 d-flex flex-column">
+                <div class="card-img-wrap" style="height: 230px;">
+                  <img src="img/patung.jpeg" alt="Arca dan arsitektur Candi Borobudur" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-bronze small fw-bold text-uppercase mb-1">Daya Tarik</span>
+                  <h3 class="h4 font-display fw-bold mb-2">Stupa, Arca & Relief</h3>
+                  <p class="text-muted flex-grow-1">
+                    Kenali detail konstruksi batu andesit tanpa perekat semen serta
+                    makna mudra pada setiap arca Buddha.
+                  </p>
+                  <a href="daya-tarik.html" class="btn btn-outline-bronze btn-sm align-self-start mt-2">
+                    Lihat Daya Tarik
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4 reveal delay-1">
+              <article class="heritage-card h-100 d-flex flex-column">
+                <div class="card-img-wrap" style="height: 230px;">
+                  <img src="img/panorama.jpg.jpeg" alt="Panorama pagi di Candi Borobudur" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-bronze small fw-bold text-uppercase mb-1">Galeri Visual</span>
+                  <h3 class="h4 font-display fw-bold mb-2">Potret Fajar & Kabut</h3>
+                  <p class="text-muted flex-grow-1">
+                    Nikmati kurasi fotografi panorama Borobudur dengan latar Gunung
+                    Merapi dan Merbabu dalam mode lightbox interaktif.
+                  </p>
+                  <a href="galeri.html" class="btn btn-outline-bronze btn-sm align-self-start mt-2">
+                    Buka Galeri
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4 reveal delay-2">
+              <article class="heritage-card h-100 d-flex flex-column">
+                <div class="card-img-wrap" style="height: 230px;">
+                  <img src="img/pagi.jpg.jpeg" alt="Suasana pagi kunjungan Candi Borobudur" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-bronze small fw-bold text-uppercase mb-1">Reservasi</span>
+                  <h3 class="h4 font-display fw-bold mb-2">Paket & E-Tiket</h3>
+                  <p class="text-muted flex-grow-1">
+                    Hitung estimasi biaya kunjungan, pilih paket tur heritage atau
+                    sunrise, dan dapatkan simulasi e-tiket secara instan.
+                  </p>
+                  <a href="tiket.html" class="btn btn-bronze btn-sm align-self-start mt-2">
+                    Pesan Tiket
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION BANNER -->
+      <section class="py-5 bg-obsidian text-center">
+        <div class="container py-4 reveal-scale">
+          <span class="kicker-tag text-gold mb-2">RENCANAKAN PERJALANAN</span>
+          <h2 class="display-5 font-display fw-bold text-white mb-3">
+            Siap Menyaksikan Kemegahan Borobudur?
+          </h2>
+          <p class="text-light opacity-75 mx-auto mb-4" style="max-width: 600px;">
+            Atur jadwal kunjungan pagi atau tur edukasi budaya bersama pemandu
+            berpengalaman untuk pengalaman yang tak terlupakan.
+          </p>
+          <a href="tiket.html" class="btn btn-bronze btn-lg px-5">
+            Mulai Reservasi Sekarang
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center justify-content-between">
+          <div class="col-md-5">
+            <h3 class="h5 font-display text-white fw-bold mb-2">
+              Dikelola oleh Sumendap, Jeivel
+            </h3>
+            <p class="small mb-1">Magelang, Jawa Tengah, Indonesia</p>
+            <p class="small mb-0">Email: info@candiborobudur.example • Telp: 0823-9911-7820</p>
+          </div>
+          <div class="col-md-7 text-md-end">
+            <div class="d-flex flex-wrap gap-3 justify-content-md-end mb-2">
+              <a href="index.html">Beranda</a>
+              <a href="tentang.html">Tentang</a>
+              <a href="daya-tarik.html">Daya Tarik</a>
+              <a href="galeri.html">Galeri</a>
+              <a href="tiket.html">Tiket</a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <small class="opacity-50">© 2026 Wisata Candi Borobudur • Project Final Web Design</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="btn-back-top" aria-label="Kembali ke atas">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

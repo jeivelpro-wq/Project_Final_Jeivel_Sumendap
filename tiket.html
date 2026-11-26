@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pesan tiket kunjungan Candi Borobudur, pilih paket Wisata Candi, Heritage Tour, atau Morning Experience dengan kalkulator harga otomatis."
+    />
+    <title>Tiket & Reservasi | Wisata Candi Borobudur</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-borobudur" aria-label="Navigasi utama">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <span class="brand-mark">WB</span>
+            <span class="d-flex flex-column">
+              <span class="brand-title">Wisata Borobudur</span>
+              <span class="brand-sub">Jawa Tengah</span>
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigasi"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="daya-tarik.html">Daya Tarik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeri.html">Galeri</a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <a class="btn btn-bronze btn-sm px-4 py-2 active" href="tiket.html">Tiket & Pesan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <img src="img/pagi.jpg.jpeg" alt="Pagi di Candi Borobudur" class="hero-bg-media" />
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <nav aria-label="breadcrumb" class="breadcrumb-heritage mb-3 reveal">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Tiket & Reservasi</li>
+            </ol>
+          </nav>
+          <h1 class="display-4 font-display fw-bold mb-2 reveal delay-1">
+            Paket Kunjungan & <span class="text-gold">E-Tiket</span>
+          </h1>
+          <p class="lead opacity-75 col-lg-7 reveal delay-2">
+            Pilih paket yang sesuai dengan agenda perjalanan Anda, hitung estimasi
+            biaya secara langsung, dan buat simulasi e-tiket kunjungan.
+          </p>
+        </div>
+      </section>
+
+      <!-- PAKET TIKET -->
+      <section class="py-5 my-3">
+        <div class="container">
+          <div class="text-center mx-auto mb-5 reveal" style="max-width: 640px;">
+            <span class="kicker-tag mb-2">PILIHAN PAKET</span>
+            <h2 class="display-6 font-display fw-bold">Tiga Pengalaman Kunjungan</h2>
+            <p class="text-muted">
+              Klik salah satu kartu paket di bawah ini untuk langsung memilihnya pada
+              formulir reservasi.
+            </p>
+          </div>
+
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-4 reveal">
+              <article class="ticket-tier h-100 d-flex flex-column" data-package="Wisata Candi">
+                <span class="badge bg-sand text-bronze align-self-start mb-3 px-3 py-2">REGULER</span>
+                <h3 class="h4 font-display fw-bold">Wisata Candi</h3>
+                <div class="my-3">
+                  <span class="display-6 fw-bold font-display text-bronze">Rp50.000</span>
+                  <span class="text-muted small">/ orang</span>
+                </div>
+                <ul class="list-unstyled text-muted small d-grid gap-2 mb-4 flex-grow-1">
+                  <li>✓ Akses pelataran & taman wisata</li>
+                  <li>✓ Akses Museum Karmawibhangga</li>
+                  <li>✓ Peta digital kawasan candi</li>
+                </ul>
+                <button type="button" class="btn btn-outline-bronze w-100">Pilih Paket Ini</button>
+              </article>
+            </div>
+
+            <div class="col-lg-4 reveal delay-1">
+              <article class="ticket-tier selected-tier h-100 d-flex flex-column" data-package="Heritage Tour">
+                <span class="badge bg-warning text-dark align-self-start mb-3 px-3 py-2 fw-bold">POPULAR</span>
+                <h3 class="h4 font-display fw-bold">Heritage Tour</h3>
+                <div class="my-3">
+                  <span class="display-6 fw-bold font-display text-bronze">Rp100.000</span>
+                  <span class="text-muted small">/ orang</span>
+                </div>
+                <ul class="list-unstyled text-muted small d-grid gap-2 mb-4 flex-grow-1">
+                  <li>✓ Akses naik ke struktur candi</li>
+                  <li>✓ Peminjaman sandal khusus Upanat</li>
+                  <li>✓ Tur edukasi bersama pemandu sesi</li>
+                </ul>
+                <button type="button" class="btn btn-bronze w-100">Pilih Paket Ini</button>
+              </article>
+            </div>
+
+            <div class="col-lg-4 reveal delay-2">
+              <article class="ticket-tier h-100 d-flex flex-column" data-package="Morning Experience">
+                <span class="badge bg-dark text-gold align-self-start mb-3 px-3 py-2">SUNRISE</span>
+                <h3 class="h4 font-display fw-bold">Morning Experience</h3>
+                <div class="my-3">
+                  <span class="display-6 fw-bold font-display text-bronze">Rp150.000</span>
+                  <span class="text-muted small">/ orang</span>
+                </div>
+                <ul class="list-unstyled text-muted small d-grid gap-2 mb-4 flex-grow-1">
+                  <li>✓ Akses khusus sesi fajar (05.00 WIB)</li>
+                  <li>✓ Panorama matahari terbit & kabut</li>
+                  <li>✓ Minuman hangat & pemandu wisata</li>
+                </ul>
+                <button type="button" class="btn btn-outline-bronze w-100">Pilih Paket Ini</button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM PEMESANAN & LIVE KALKULATOR -->
+      <section id="formPemesanan" class="py-5 bg-sand">
+        <div class="container py-3">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5 reveal-left">
+              <span class="kicker-tag mb-2">KALKULATOR & INFO</span>
+              <h2 class="display-6 font-display fw-bold mb-3">Ringkasan Estimasi Biaya</h2>
+              <p class="text-muted mb-4">
+                Total biaya akan terhitung otomatis sesuai paket, jumlah pengunjung,
+                dan layanan tambahan yang Anda pilih.
+              </p>
+
+              <div class="eticket-stub p-4 shadow-lg mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <small class="text-gold text-uppercase fw-bold letter-spacing-1">Simulasi Tagihan</small>
+                  <span class="badge bg-warning text-dark">Instan</span>
+                </div>
+                <div class="eticket-divider"></div>
+                <div class="d-flex justify-content-between mb-2 small">
+                  <span class="opacity-75">Paket Dipilih</span>
+                  <strong id="summaryPackage">Heritage Tour</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2 small">
+                  <span class="opacity-75">Jumlah & Tambahan</span>
+                  <strong id="summaryQty">2 Orang</strong>
+                </div>
+                <div class="eticket-divider"></div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="opacity-75">Total Estimasi</span>
+                  <span id="summaryTotal" class="h3 font-display text-gold fw-bold mb-0">Rp200.000</span>
+                </div>
+              </div>
+
+              <div class="bg-white p-4 rounded-4 border">
+                <h3 class="h6 font-display fw-bold mb-2">Lokasi & Jam Operasional</h3>
+                <p class="small text-muted mb-1">Jl. Badrawati, Kec. Borobudur, Magelang, Jawa Tengah</p>
+                <p class="small text-muted mb-0">Buka setiap hari: 06.30 – 17.00 WIB (Sesi Sunrise mulai 05.00 WIB)</p>
+              </div>
+            </div>
+
+            <div class="col-lg-7 reveal-right">
+              <div class="bg-white p-4 p-md-5 rounded-4 border shadow-sm">
+                <h3 class="h4 font-display fw-bold mb-4">Formulir Reservasi Kunjungan</h3>
+                <form id="bookingForm" class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="namaInput" class="form-label fw-semibold small">Nama Lengkap</label>
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="namaInput"
+                        placeholder="Contoh: Jeivel Sumendap"
+                        required
+                      />
+                      <div class="invalid-feedback">Mohon masukkan nama lengkap Anda.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="emailInput" class="form-label fw-semibold small">Alamat Email</label>
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="emailInput"
+                        placeholder="nama@email.com"
+                        required
+                      />
+                      <div class="invalid-feedback">Mohon masukkan email yang valid.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="tanggalInput" class="form-label fw-semibold small">Tanggal Kunjungan</label>
+                      <input type="date" class="form-control form-control-lg" id="tanggalInput" required />
+                      <div class="invalid-feedback">Pilih tanggal kunjungan.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="sesiSelect" class="form-label fw-semibold small">Sesi Waktu</label>
+                      <select class="form-select form-select-lg" id="sesiSelect" required>
+                        <option value="05.00 WIB (Sunrise)">05.00 WIB (Sunrise)</option>
+                        <option value="08.30 WIB (Pagi)" selected>08.30 WIB (Pagi)</option>
+                        <option value="11.00 WIB (Siang)">11.00 WIB (Siang)</option>
+                        <option value="14.30 WIB (Sore)">14.30 WIB (Sore)</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-7">
+                      <label for="paketSelect" class="form-label fw-semibold small">Paket Kunjungan</label>
+                      <select class="form-select form-select-lg" id="paketSelect" required>
+                        <option value="Wisata Candi">Wisata Candi (Rp50.000/org)</option>
+                        <option value="Heritage Tour" selected>Heritage Tour (Rp100.000/org)</option>
+                        <option value="Morning Experience">Morning Experience (Rp150.000/org)</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-5">
+                      <label for="jumlahInput" class="form-label fw-semibold small">Jumlah Orang</label>
+                      <input
+                        type="number"
+                        class="form-control form-control-lg"
+                        id="jumlahInput"
+                        min="1"
+                        max="30"
+                        value="2"
+                        required
+                      />
+                      <div class="invalid-feedback">Jumlah antara 1 hingga 30 orang.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check p-3 bg-sand rounded-3 border">
+                        <input class="form-check-input ms-0 me-2" type="checkbox" id="pemanduCheck" />
+                        <label class="form-check-label small fw-semibold" for="pemanduCheck">
+                          Tambah Layanan Pemandu Privat Bahasa Indonesia/Inggris (+Rp75.000 / grup)
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="catatanInput" class="form-label fw-semibold small">Catatan Tambahan (Opsional)</label>
+                      <textarea
+                        class="form-control"
+                        id="catatanInput"
+                        rows="3"
+                        placeholder="Contoh: Kebutuhan kursi roda, rombongan sekolah, atau permintaan khusus lainnya..."
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <div id="editModeBanner" class="alert alert-warning d-none justify-content-between align-items-center py-2 px-3 small mb-0" role="alert">
+                        <span><strong>Mode Edit:</strong> Mengubah data reservasi <strong id="editCodeLabel"></strong></span>
+                        <button type="button" id="cancelEditBtn" class="btn btn-sm btn-outline-dark py-0 px-2">Batal</button>
+                      </div>
+                    </div>
+
+                    <div class="col-12 pt-2 d-flex gap-2">
+                      <button type="submit" id="submitBookingBtn" class="btn btn-bronze btn-lg flex-grow-1">
+                        Buat Reservasi Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PENYIMPANAN DATA SEMENTARA (CRUD JAVASCRIPT) -->
+      <section id="daftarReservasi" class="py-5 border-top">
+        <div class="container py-2">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4 reveal">
+            <div>
+              <span class="kicker-tag mb-2">PENYIMPANAN SEMENTARA (LOCALSTORAGE)</span>
+              <h2 class="h3 font-display fw-bold mb-0">
+                Data Reservasi Tersimpan
+                <span id="crudCountBadge" class="badge rounded-pill bg-sand text-bronze fs-6 ms-2">0 Data</span>
+              </h2>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <input
+                type="search"
+                id="crudSearchInput"
+                class="form-control form-control-sm"
+                style="width: 230px;"
+                placeholder="Cari nama / kode booking..."
+                aria-label="Cari reservasi"
+              />
+              <button type="button" id="seedDemoBtn" class="btn btn-outline-bronze btn-sm">
+                + Data Contoh
+              </button>
+              <button type="button" id="clearAllBtn" class="btn btn-outline-danger btn-sm">
+                Hapus Semua
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-4 border shadow-sm overflow-hidden reveal delay-1">
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0">
+                <thead class="bg-sand">
+                  <tr class="small text-uppercase text-muted">
+                    <th class="ps-4 py-3">Kode</th>
+                    <th class="py-3">Pengunjung</th>
+                    <th class="py-3">Jadwal & Paket</th>
+                    <th class="py-3">Total</th>
+                    <th class="pe-4 py-3 text-end">Aksi (CRUD)</th>
+                  </tr>
+                </thead>
+                <tbody id="crudTableBody"></tbody>
+              </table>
+            </div>
+            <div id="crudEmptyState" class="text-center py-5 px-3 text-muted">
+              <p class="mb-2 fw-semibold">Belum ada data reservasi tersimpan di browser.</p>
+              <small>Silakan isi formulir di atas untuk menambah data (Create), atau klik "+ Data Contoh".</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ ACCORDION -->
+      <section class="py-5 my-3">
+        <div class="container" style="max-width: 860px;">
+          <div class="text-center mb-4 reveal">
+            <span class="kicker-tag mb-2">INFORMASI PENGUNJUNG</span>
+            <h2 class="display-6 font-display fw-bold">Pertanyaan yang Sering Diajukan</h2>
+          </div>
+
+          <div class="accordion reveal delay-1" id="faqBorobudur">
+            <div class="accordion-item border rounded-4 mb-3 overflow-hidden">
+              <h3 class="accordion-header">
+                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Apakah semua tiket sudah termasuk akses naik ke struktur candi?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqBorobudur">
+                <div class="accordion-body text-muted small">
+                  Paket <strong>Heritage Tour</strong> dan <strong>Morning Experience</strong> sudah mencakup akses naik ke struktur candi beserta peminjaman sandal khusus Upanat. Paket <strong>Wisata Candi</strong> berlaku untuk area pelataran dan taman wisata.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border rounded-4 mb-3 overflow-hidden">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Apa yang perlu disiapkan saat berkunjung di pagi hari?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqBorobudur">
+                <div class="accordion-body text-muted small">
+                  Disarankan mengenakan pakaian yang sopan dan nyaman, membawa jaket tipis untuk sesi fajar, air minum pribadi, serta datang 20 menit sebelum sesi dimulai untuk penukaran tiket.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border rounded-4 overflow-hidden">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Apakah formulir di website ini terhubung dengan pembayaran nyata?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqBorobudur">
+                <div class="accordion-body text-muted small">
+                  Formulir ini merupakan simulasi interaktif front-end untuk keperluan proyek akhir, yang menghasilkan pratinjau E-Tiket digital secara instan menggunakan JavaScript.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL E-TIKET DIGITAL -->
+    <div class="modal fade" id="eticketModal" tabindex="-1" aria-labelledby="eticketModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content eticket-stub p-3 p-md-4 border-0">
+          <div class="modal-header border-0 pb-0">
+            <div>
+              <span class="badge bg-warning text-dark mb-1">SIMULASI E-TIKET</span>
+              <h5 class="modal-title font-display fw-bold text-white" id="eticketModalLabel">
+                Reservasi Berhasil Dibuat
+              </h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <div class="p-3 rounded-3 bg-black bg-opacity-25 border border-secondary text-center mb-3">
+              <small class="text-gold d-block text-uppercase">Kode Booking</small>
+              <strong id="eticketCode" class="h3 font-display text-white letter-spacing-1">BRB-00000</strong>
+            </div>
+
+            <div class="d-grid gap-2 small">
+              <div class="d-flex justify-content-between">
+                <span class="opacity-75">Nama Pengunjung</span>
+                <strong id="eticketName">-</strong>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="opacity-75">Email</span>
+                <strong id="eticketEmail">-</strong>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="opacity-75">Jadwal</span>
+                <strong id="eticketDate">-</strong>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="opacity-75">Paket & Jumlah</span>
+                <strong id="eticketPkg">-</strong>
+              </div>
+            </div>
+
+            <div class="eticket-divider"></div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="opacity-75 small">Total Estimasi</span>
+              <strong id="eticketTotal" class="h4 font-display text-gold mb-0">Rp0</strong>
+            </div>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+            <button type="button" class="btn btn-bronze w-100" data-bs-dismiss="modal">
+              Selesai
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center justify-content-between">
+          <div class="col-md-5">
+            <h3 class="h5 font-display text-white fw-bold mb-2">
+              Dikelola oleh Sumendap, Jeivel
+            </h3>
+            <p class="small mb-1">Magelang, Jawa Tengah, Indonesia</p>
+            <p class="small mb-0">Email: info@candiborobudur.example • Telp: 0823-9911-7820</p>
+          </div>
+          <div class="col-md-7 text-md-end">
+            <div class="d-flex flex-wrap gap-3 justify-content-md-end mb-2">
+              <a href="index.html">Beranda</a>
+              <a href="tentang.html">Tentang</a>
+              <a href="daya-tarik.html">Daya Tarik</a>
+              <a href="galeri.html">Galeri</a>
+              <a href="tiket.html">Tiket</a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <small class="opacity-50">© 2026 Wisata Candi Borobudur • Project Final Web Design</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="btn-back-top" aria-label="Kembali ke atas">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

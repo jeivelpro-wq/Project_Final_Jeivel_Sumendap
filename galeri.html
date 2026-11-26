@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Galeri foto Candi Borobudur: sunrise, stupa, relief batu bersejarah, arca Buddha, dan panorama pegunungan Jawa Tengah."
+    />
+    <title>Galeri Visual | Wisata Candi Borobudur</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-borobudur" aria-label="Navigasi utama">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <span class="brand-mark">WB</span>
+            <span class="d-flex flex-column">
+              <span class="brand-title">Wisata Borobudur</span>
+              <span class="brand-sub">Jawa Tengah</span>
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigasi"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="daya-tarik.html">Daya Tarik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="galeri.html">Galeri</a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <a class="btn btn-bronze btn-sm px-4 py-2" href="tiket.html">Tiket & Pesan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <img src="img/panorama.jpg.jpeg" alt="Panorama Candi Borobudur" class="hero-bg-media" />
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <nav aria-label="breadcrumb" class="breadcrumb-heritage mb-3 reveal">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Galeri Visual</li>
+            </ol>
+          </nav>
+          <h1 class="display-4 font-display fw-bold mb-2 reveal delay-1">
+            Potret <span class="text-gold">Keindahan Borobudur</span>
+          </h1>
+          <p class="lead opacity-75 col-lg-7 reveal delay-2">
+            Klik foto mana saja untuk membuka tampilan Lightbox beresolusi penuh, atau
+            saring berdasarkan kategori di bawah ini.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALLERY FILTER & GRID -->
+      <section class="py-5 my-3">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4 reveal">
+            <div>
+              <span class="kicker-tag mb-1">KOLEKSI DOKUMENTASI</span>
+              <h2 class="h3 font-display fw-bold mb-0">Kurasi Fotografi Destinasi</h2>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <button type="button" class="filter-pill active" data-gallery-filter="all">
+                Semua Foto
+              </button>
+              <button type="button" class="filter-pill" data-gallery-filter="panorama">
+                Panorama Pagi
+              </button>
+              <button type="button" class="filter-pill" data-gallery-filter="arsitektur">
+                Arsitektur
+              </button>
+              <button type="button" class="filter-pill" data-gallery-filter="relief">
+                Relief & Arca
+              </button>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 gallery-item-col reveal" data-category="panorama">
+              <div
+                class="gallery-card"
+                data-src="img/sunrise.jpg.jpeg"
+                data-title="Sunrise Borobudur"
+                data-desc="Cahaya matahari terbit menyinari stupa dan lembah Magelang dengan nuansa keemasan."
+              >
+                <img src="img/sunrise.jpg.jpeg" alt="Sunrise Borobudur" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Panorama Pagi</span>
+                  <h3 class="h5 font-display fw-bold mb-0">Sunrise Borobudur</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item-col reveal delay-1" data-category="arsitektur">
+              <div
+                class="gallery-card"
+                data-src="img/stupa.jpg.jpeg"
+                data-title="Stupa Berlubang Arupadhatu"
+                data-desc="Susunan stupa berbentuk lonceng berlubang di teras melingkar tertinggi Candi Borobudur."
+              >
+                <img src="img/stupa.jpg.jpeg" alt="Stupa Candi Borobudur" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Arsitektur</span>
+                  <h3 class="h5 font-display fw-bold mb-0">Stupa Arupadhatu</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item-col reveal delay-2" data-category="relief">
+              <div
+                class="gallery-card"
+                data-src="img/relief.png"
+                data-title="Panel Relief Bersejarah"
+                data-desc="Ukiran batu andesit yang menceritakan kisah ajaran moral dan kehidupan masyarakat Jawa kuno."
+              >
+                <img src="img/relief.png" alt="Relief Candi Borobudur" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Relief & Arca</span>
+                  <h3 class="h5 font-display fw-bold mb-0">Relief Bersejarah</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item-col reveal" data-category="panorama">
+              <div
+                class="gallery-card"
+                data-src="img/panorama.jpg.jpeg"
+                data-title="Panorama Gunung Merapi"
+                data-desc="Pemandangan lanskap Candi Borobudur dengan latar Gunung Merapi dan Merbabu di kejauhan."
+              >
+                <img src="img/panorama.jpg.jpeg" alt="Panorama Borobudur dan Merapi" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Panorama Pagi</span>
+                  <h3 class="h5 font-display fw-bold mb-0">Panorama Merapi</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item-col reveal delay-1" data-category="relief">
+              <div
+                class="gallery-card"
+                data-src="img/patung.jpeg"
+                data-title="Arca Buddha di Pelataran"
+                data-desc="Arca Buddha batu andesit yang menjadi simbol ketenangan dan kebijaksanaan di pelataran candi."
+              >
+                <img src="img/patung.jpeg" alt="Arca Buddha Borobudur" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Relief & Arca</span>
+                  <h3 class="h5 font-display fw-bold mb-0">Arca Buddha</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 gallery-item-col reveal delay-2" data-category="arsitektur">
+              <div
+                class="gallery-card"
+                data-src="img/candi.jpeg"
+                data-title="Megahnya Struktur Piramida"
+                data-desc="Tampilan megah undakan teras Candi Borobudur yang tersusun rapi dari jutaan balok batu."
+              >
+                <img src="img/candi.jpeg" alt="Struktur Candi Borobudur" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Arsitektur</span>
+                  <h3 class="h5 font-display fw-bold mb-0">Struktur Undakan</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 gallery-item-col reveal" data-category="panorama">
+              <div
+                class="gallery-card"
+                style="aspect-ratio: 21 / 9;"
+                data-src="img/pagi.jpg.jpeg"
+                data-title="Suasana Pagi di Borobudur"
+                data-desc="Ketenangan pagi hari saat kabut perlahan terangkat dari kawasan taman wisata Borobudur."
+              >
+                <img src="img/pagi.jpg.jpeg" alt="Borobudur pada pagi hari" />
+                <div class="gallery-caption">
+                  <span class="badge bg-warning text-dark mb-1">Panorama Pagi</span>
+                  <h3 class="h4 font-display fw-bold mb-0">Ketenangan Pagi di Pelataran Candi</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div
+      class="modal fade"
+      id="galleryLightbox"
+      tabindex="-1"
+      aria-labelledby="lightboxTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-obsidian text-white border-secondary rounded-4 overflow-hidden">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title font-display" id="lightboxTitle">Judul Foto</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body p-0 position-relative text-center bg-black">
+            <img
+              id="lightboxImg"
+              src=""
+              alt="Preview Galeri"
+              class="img-fluid"
+              style="max-height: 72vh; object-fit: contain;"
+            />
+            <button
+              id="lightboxPrev"
+              type="button"
+              class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-3 rounded-circle opacity-75"
+              style="width: 44px; height: 44px;"
+              aria-label="Foto sebelumnya"
+            >
+              ‹
+            </button>
+            <button
+              id="lightboxNext"
+              type="button"
+              class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-3 rounded-circle opacity-75"
+              style="width: 44px; height: 44px;"
+              aria-label="Foto berikutnya"
+            >
+              ›
+            </button>
+          </div>
+          <div class="modal-footer border-secondary justify-content-start">
+            <p id="lightboxDesc" class="mb-0 small text-light opacity-75"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center justify-content-between">
+          <div class="col-md-5">
+            <h3 class="h5 font-display text-white fw-bold mb-2">
+              Dikelola oleh Sumendap, Jeivel
+            </h3>
+            <p class="small mb-1">Magelang, Jawa Tengah, Indonesia</p>
+            <p class="small mb-0">Email: info@candiborobudur.example • Telp: 0823-9911-7820</p>
+          </div>
+          <div class="col-md-7 text-md-end">
+            <div class="d-flex flex-wrap gap-3 justify-content-md-end mb-2">
+              <a href="index.html">Beranda</a>
+              <a href="tentang.html">Tentang</a>
+              <a href="daya-tarik.html">Daya Tarik</a>
+              <a href="galeri.html">Galeri</a>
+              <a href="tiket.html">Tiket</a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <small class="opacity-50">© 2026 Wisata Candi Borobudur • Project Final Web Design</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="btn-back-top" aria-label="Kembali ke atas">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
